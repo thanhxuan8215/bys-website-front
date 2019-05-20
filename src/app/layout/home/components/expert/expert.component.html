@@ -1,0 +1,46 @@
+<div>
+  <div class="title text-center text-uppercase p-4 pt-5">Chuyên gia</div>
+  <div class="underline mb-4"></div>
+  <p class="text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua.</p>
+  <div class="list-box">
+    <owl-carousel [options]="options" [items]="experts"
+      [carouselClasses]="['owl-theme', 'sliding']" #owlElement1>
+      <div class="item" *ngFor="let expert of experts;let i = index">
+        <div class="px-4 pt-5 pb-4 d-inline-block" (click)="clickExpert(expert)">
+          <div class="contain-box-img" [class.active] ="expert._id == expertSelected._id">
+            <div class="box-img">
+              <img [src]="expert.avatarUrl">
+            </div>
+          </div>
+          <div class="invisible text" [class.invisible]="expert._id != expertSelected._id">
+            <div class="name text-center pt-4 pb-2">{{expert.name}}</div>
+            <div class="position text-center">{{expert.identify}}</div>
+          </div>
+        </div>
+      </div>
+    </owl-carousel>
+  </div>
+
+  <div class="content d-flex">
+    <div class="content-left">
+      <div class="intro">
+        <div class="my-4">
+          <div class="name pb-3"><a href="">{{expertSelected.name}} - {{expertSelected.position}}</a></div>
+          <div class="position">{{expertSelected.identify}}</div>
+        </div>
+        <p>{{expertSelected.description}}</p>
+        <div class="info-contact d-flex pb-3">
+          <a href="https://www.facebook.com" class="facebook"><i class="fa fa-facebook mr-2 my-2" aria-hidden="true"></i></a>
+          <a href="https://plus.google.com" class="google-plus"><i class="fa fa-google-plus m-2" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com" class="linkedin"><i class="fa fa-linkedin m-2" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="content-right d-flex justify-content-center">
+      <div class="image">
+        <img [src]="expertSelected.avatarUrl">
+      </div>
+    </div>
+  </div>
+</div>

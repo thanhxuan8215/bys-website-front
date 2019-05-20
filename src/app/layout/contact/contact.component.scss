@@ -1,0 +1,220 @@
+:host{
+    .contain-page-head{
+        background-image: url('/assets/images/background-page-header-contact.png');
+        background-size: cover;
+        .content-page-head{
+            padding: 0 10% 0 20%;
+            .page-head{
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                .title{
+                    font-size: 2rem;
+                    font-weight: 800;
+                    color: #001a58;
+                    font-family: "Roboto";
+                }
+                ol{
+                    margin-bottom: 0;
+                    padding-left: 0;
+                    font-size: 0.9rem;
+                    color: #727272;
+                    list-style-type: none;
+                    &>li{
+                        a{
+                            color: #727272;
+                        }
+                        font-family: "Montserrat";
+                    }
+                }
+            }
+        }
+    }
+    .contain{
+        .content{
+            padding: 0 10% 0 20%;
+            .box{
+                border: 1px solid #dcdcdc;
+                img{
+                    width: 36%;
+                    max-height: 215px;
+                    object-fit: cover;
+                }
+                .info{
+                    width: 64%;
+                    .name{
+                        font-size: 1.2rem;
+                        line-height: 1.6875rem;
+                        font-weight: 800;
+                        color: #00174d;
+                        margin-bottom: 1rem;
+                    }
+                    &>ul{
+                        list-style-type: none;
+                        padding: 0;
+                        a{
+                            text-decoration: none;
+                            color: #212f42;
+                            &:hover{
+                                color: #212f42;
+                            }
+                        }
+                        li{
+                            font-size: 0.9rem;
+                            line-height: 1.5rem;
+                            font-weight: 600;
+                            color: #212f42;
+                            margin-bottom: 1rem;
+                            span{
+                                width: 15px;
+                            }
+                            i{
+                                color: #0f91a0;
+                                font-size: 0.8125rem;
+                            }
+                            
+                            &>div{
+                                display: grid;
+                                grid-template-columns: auto 1fr;
+                                &>i{
+                                    transform: translateY(5px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .error{
+                color: red;
+            }
+            .box-info-contact{
+                border: 1px solid #eae9e9;
+                padding: 1.5rem;
+                background-color: #fbfbfb;
+                &>h2{
+                    font-size: 2.5rem;
+                    line-height: 2.8125rem;
+                    font-weight: 800;
+                    text-align: center;
+                    font-family: "Roboto";
+                    color: #00174d;
+                    font-style: normal;
+                }
+                &>p{
+                    font-size: 0.9rem;
+                    font-family: "Roboto";
+                    text-align: center;
+                    font-weight: 500;
+                }
+                input, textarea{
+                    border: 1px solid #d8d8d8;
+                    outline: none;
+                    font-family: "Montserrat";
+                    background-color: #f8f8f8;
+                }
+
+                button{
+                    width: 100%;
+                    border-radius: 100px;
+                    border: 1px solid #138689;
+                    outline: none;
+                    background-color: #138689;
+                    color: white;
+                    padding: 0.5rem;
+                    cursor: pointer;
+                    opacity: 1;
+                    transition: all 0.3s ease-in-out;
+                    &[disabled]{
+                        opacity: 0.6;
+                    }
+                    &:focus{
+                        border: 1px solid #666;;
+                    }
+                }
+                input:focus{
+                    border: 1px solid #7fb0b6;
+                }
+                textarea:focus{
+                    border: 1px solid #7fb0b6;
+                }
+            }
+        }
+    }
+
+    agm-map {
+        height: 100%;
+      }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .contain-page-head{
+        .content-page-head{
+            padding: 0 10% 0 10% !important;
+        }
+    }
+    .contain{
+        .content{
+            padding: 0 10% 0 10% !important;
+            .row{
+                &>div:first-child{
+                    margin-bottom: 0 !important;
+                }
+                &>div{
+                    padding-right: 0 !important;
+                }
+            }
+        }
+    }
+    .map{
+        padding-left: 15px !important;
+        padding-right: 0 !important;
+        margin-top: 3rem;
+    }
+
+    agm-map {
+        height: 500px !important;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .contain-page-head{
+        .content-page-head{
+            padding: 0 10% 0 10% !important;
+        }
+    }
+    .contain{
+        .content{
+            padding: 0 10% 0 10% !important;
+            .row{
+                &>div:first-child{
+                    margin-bottom: 0 !important;
+                }
+                &>div{
+                    padding-right: 0 !important;
+                }
+                .box{
+                    flex-direction: column !important;
+                    img{
+                        width: 100% !important;
+                    }
+                    .info{
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .g-captcha{
+        transform: scale(0.9);
+        transform-origin: 0 0;
+    }
+    .map{
+        padding-left: 15px !important;
+        padding-right: 0 !important;
+        margin-top: 3rem;
+    }
+
+    agm-map {
+        height: 500px !important;
+      }
+}

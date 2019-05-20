@@ -1,0 +1,34 @@
+<div class="contain">
+    <div class="content">
+      <div class="list-box">
+        <owl-carousel [options]="{items: 1, dots: true, navigation: false}" [items]="images"
+        [carouselClasses]="['owl-theme', 'sliding']">
+        <div class="item" *ngFor="let image of images;let i = index">
+          <div class="content-item">
+            <div class="content-logo">
+              <div class="logo mb-3">
+                <img class="" src="assets/images/logo-lamviet.png">
+              </div>
+              <div class="name">CÔNG TY CP LÂM VIỆT</div>
+              <P>Sản xuất gỗ giao công nội thất </P>
+            </div>
+            <div class="content-text ml-4">
+              <div class="text">Hệ thống ERP cho phép chúng tôi lên kế hoạch và kiểm soát sản xuất, giao hàng theo thời gian thực đến từng ngày. Nhờ tính năng dự báo sản xuất và 
+                    tối ưu hóa cho chúng tôi chủ động phòng tránh giao hàng trễ hạn.
+              </div>
+              <div class="signature mt-4">
+                <div class="text p-1">
+                  <div class="name">MR. TRAN NGUYEN</div>
+                  <div class="position">Giám đốc kinh doanh</div>
+                </div>
+                <div class="avatar pl-2">
+                    <img class="" src="assets/images/no-avatar.png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </owl-carousel>
+      </div>
+    </div>
+  </div>

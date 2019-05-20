@@ -1,0 +1,136 @@
+:host{
+    .contain{
+        position: relative;
+        .previous{
+            position: absolute;
+            height: 4rem;
+            top: calc(50% - 2rem);
+            border:none;
+            background-color: #545D65;
+            opacity: 0.55;
+            outline: none;
+            padding: 0 0.5rem;
+            z-index: 2;
+        }
+        span{
+            i{
+                font-size: 1rem;
+                color: white;
+            }
+        }
+        .content{
+            img{
+                min-height: 250px;
+                object-fit: cover;
+            }
+        }
+        .next{
+            position: absolute;
+            height: 4rem;
+            top: calc(50% - 2rem);
+            right: 0;
+            border: none;
+            background-color: #545D65;
+            opacity: 0.55;
+            outline: none;
+            padding: 0 0.5rem;
+            z-index: 2;
+        }
+    }
+}
+
+:host /deep/{
+    .owl-theme .owl-nav.disabled + .owl-dots {
+        position: absolute;
+        bottom: 2rem;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .owl-theme .owl-dots .owl-dot span{
+        position: relative;
+        width: 1.2rem;
+        height: 1.2rem;
+        border: 2px solid white;
+        border-radius: 50%;
+        box-sizing: content-box;
+        background: transparent;
+        outline: none;
+    }
+
+    .owl-theme .owl-dots .owl-dot span:after{
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        content: '';
+        width: 0.6rem;
+        height: 0.6rem;
+        background:#a6bad8;
+        border-radius: 50%;
+        transform: translate(50%,-50%)
+    }
+
+    .owl-theme .owl-dots .owl-dot {
+        outline: none;
+    }
+
+    .owl-theme .owl-dots .owl-dot.active span:after, .owl-theme .owl-dots .owl-dot:hover span:after {
+        background: white;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    :host /deep/{
+        .owl-theme .owl-nav.disabled + .owl-dots {
+            bottom: 1rem;
+        }
+    
+        .owl-theme .owl-dots .owl-dot span{
+            width: 0.8rem;
+            height: 0.8rem;
+            border: 1.5px solid white;
+        }
+    
+        .owl-theme .owl-dots .owl-dot span:after{
+            width: 0.35rem;
+            height: 0.35rem;
+        }
+    
+        .owl-theme .owl-dots .owl-dot {
+            outline: none;
+        }
+    
+        .owl-theme .owl-dots .owl-dot.active span:after, .owl-theme .owl-dots .owl-dot:hover span:after {
+            background: white;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    :host /deep/{
+        .owl-theme .owl-nav.disabled + .owl-dots {
+            bottom: 0;
+        }
+    
+        .owl-theme .owl-dots .owl-dot span{
+            width: 0.8rem;
+            height: 0.8rem;
+            border: 1.5px solid white;
+        }
+    
+        .owl-theme .owl-dots .owl-dot span:after{
+            width: 0.35rem;
+            height: 0.35rem;
+        }
+    
+        .owl-theme .owl-dots .owl-dot {
+            outline: none;
+        }
+    
+        .owl-theme .owl-dots .owl-dot.active span:after, .owl-theme .owl-dots .owl-dot:hover span:after {
+            background: white;
+        }
+    }
+
+}

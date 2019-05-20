@@ -1,0 +1,24 @@
+<div class="contain">
+  <div class="title">Mô hình thành công</div>
+  <div class="underline mb-4"></div>
+  <p class="text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+  <div class="list-box pt-5 pb-4">
+    <owl-carousel [options]="options" [items]="images"
+    [carouselClasses]="['owl-theme', 'sliding']">
+    <div class="item" *ngFor="let image of images;let i = index">
+      <div class="content-item">
+        <div class="image">
+          <img src="http://bys.vn/portals/2007/lamvietok_1.jpg">
+          <div class="content-text">
+            <div class="name px-4">Công Ty CP Lâm việt</div>
+            <p class="text px-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+          </div>
+          <div class="content-border">
+            <div class="content-number">{{(i + 1 < 10 ? "0" : "") + (i + 1)}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </owl-carousel>
+  </div>
+</div>

@@ -1,0 +1,156 @@
+$top-nav-background-color:  #1d8588;
+:host{
+    .header{
+        z-index: 1001;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background-color: #ffffff;
+        .contain-logo{
+            z-index: 2;
+            position: absolute;
+            left: 5%;
+            filter: drop-shadow(3px 3px #127b7e);
+            .logo{
+                width: 150px;
+                height: 150px;
+                background-color: white;
+                clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+            }
+        }
+        .top-navbar{
+            background-color: $top-nav-background-color;
+            box-shadow: 0 0 13px rgba(88,88,88,0.21);
+            font-size: 0.875rem;
+            color: #ffff;
+            line-height: 1.375rem;
+            padding: 0;
+            padding-left: 23%;
+            padding-right: 15%;
+            ul{
+                list-style-type: none;
+                margin: 0;
+                &.ul-left{
+                    padding: 0;
+                }
+                &.ul-right{
+                    padding: 0;
+                    li{
+                        border-left: 1px solid #349194;
+                        a.social{
+                            width: 34px;
+                            height: 34px;
+                            text-align: center;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            transition: all 0.3s ease-in-out;
+                        }
+                        &.google-plus:hover a{
+                            background-color: #dd4b39;
+                        }
+
+                        &.facebook:hover a{
+                            background-color: #3b5999;
+                        }
+
+                        &.twitter:hover a{
+                            background-color: #55acee
+                        }
+
+                        &.vimeo:hover a{
+                            background-color: #1ab7ea;
+                        }
+                    }
+                }
+            }
+        }
+
+        .bot-navbar{
+            background-image: url("/assets/images/background-menu.png");
+            background-size: cover;
+            color: #ffff;
+            font-size: 1.03rem;
+            font-weight: 500;
+            font-family: 'Montserrat';
+            .navbar-toggle {
+                padding: 0.25rem 0.75rem;
+                font-size: 1.25rem;
+                line-height: 1;
+                background-color: transparent;
+                border: 1px solid transparent;
+                border-radius: 0.25rem;
+            }
+            ul{
+                padding-left: 23%;
+                list-style-type: none;
+                margin: 0;
+                width: 100%;
+                li{
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        cursor: pointer;
+                        &:visited{
+                            color: #ffff;
+                        }
+                        transition: all 0.3s ease-in-out;
+                        &:hover{
+                            border-bottom: 2px solid white;
+                        }
+                    }
+                    .active{
+                        border-bottom: 2px solid white;
+                    }
+                }
+            }
+        }
+
+        .ul-left li> a, .ul-right li> a{
+            color: #ffffff;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+    .header{
+        box-shadow: 0 0 20px rgba(0,0,0,.15);
+    }
+    .top-navbar{
+        display: none !important;
+    }
+
+    .bot-navbar{
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+        background-image: unset !important;
+    }
+    .navbar-expand-lg {
+        flex-flow: row nowrap !important;
+        justify-content: space-between !important;
+        .navbar-toggler {
+            display: inline !important;
+        }
+
+        .navbar-collapse{
+            display: none !important;
+        }
+    }
+
+    .logo{
+        display: none !important;
+    }
+
+    .logo-mobi{
+        display: inline !important;
+        img{
+            width: 50px;
+        }
+    }
+    .lang-mobi{
+        display: flex !important;
+    }
+}

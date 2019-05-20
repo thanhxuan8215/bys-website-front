@@ -1,0 +1,178 @@
+:host{
+    .contain{
+        padding: 5% 17%;
+        background-image: url('/assets/images/background-comment.png');
+        background-size: cover;
+        .content{
+            border-bottom: 3px solid rgb(18, 134, 137);;
+            border-right: 3px solid rgb(18, 134, 137);;
+            background-color: #ffffff;
+            .list-box{
+                
+                .content-item{
+                    background-color: #fff;
+                    padding: 4rem 4rem 2rem 4rem;
+                    display: flex;
+                    .content-logo{
+                        width: 30%;
+                        .logo{
+                            img{
+                                max-width: 30%;
+                                max-height: 30%;
+                                margin: auto;
+                            }
+                        }
+                        &>.name{
+                            font-size: 1.25rem;
+                            line-height: 1.875rem;
+                            color: rgb(18, 134, 137);
+                            font-family: "Montserrat";
+                            text-align: center;
+                            text-transform: uppercase;
+                        }
+                        &>p{
+                            font-size: 0.875;
+                            line-height: 1.875rem;
+                            color: #6b7082;
+                            font-family: "Roboto";
+                            font-weight: 400;
+                            text-align: center;
+                        }
+                    }
+                    .content-text{
+                        width: 70%;
+                        &>.text{
+                            position: relative;
+                            font-size: 1.3rem;
+                            line-height: 2rem !important;
+                            color: rgb(98, 98, 98);
+                            font-family: "Roboto";
+                            text-align: justify;
+                            &:before {
+                                content: '';
+                                background-image: url('../../../../../assets/images/quote.png');
+                                background-size: contain;
+                                position: absolute;
+                                background-repeat: no-repeat;
+                                width: 1.25rem !important;
+                                height: 1.25rem !important;
+                                left: -1.25rem;
+                                top: -0.25rem;
+                            }
+
+                            &:after {
+                                content: '';
+                                background-image: url('../../../../../assets/images/quote.png');
+                                background-size: contain;
+                                position: absolute;
+                                background-repeat: no-repeat;
+                                width: 1.25rem !important;
+                                height: 1.25rem !important;
+                                bottom: -0.3rem;
+                                transform: rotate(180deg);
+                            }
+                        }
+                        .signature{
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: center;
+                            .text{
+                                &>.name{
+                                    font-size: 1rem;
+                                    line-height: 1.5rem;
+                                    color: rgb(98, 98, 98);
+                                    font-family: "Roboto";
+                                }
+                                &>.position{
+                                    font-size: 0.875rem;
+                                    line-height: 2rem;
+                                    color: rgb(107, 112, 130);
+                                    font-family: "Roboto";
+                                    text-align: left;
+                                    font-style: italic;
+                                }
+                            }
+                            .avatar{
+                                width: 45px;
+                                height: 45px;
+                                border-radius: 50%;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+:host /deep/ {
+    .owl-theme .owl-dots .owl-dot span{
+        width: 10px;
+        height: 10px;
+        border-radius: 2px;
+        background: #8cc0c2;
+    }
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+        background: #1d8588
+    }
+
+    .owl-theme .owl-nav.disabled + .owl-dots{
+        margin-bottom: 10px;
+    }
+
+    .owl-theme .owl-dots .owl-dot {
+        outline: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .content-item{
+        flex-direction: column !important;
+        padding-top: 2rem !important;
+        .content-logo{
+            width: unset !important;
+            .logo{
+                img{
+                    max-width: 20% !important;
+                    max-height: 20% !important;
+                }
+            }
+        }
+
+        .content-text{
+            width: unset !important;
+            margin-left: 0 !important;
+            .text{
+                font-size: 1.1rem !important;
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .contain{
+        padding: 5% !important;
+    }
+    .content-item{
+        flex-direction: column !important;
+        padding-top: 2rem !important;
+        .content-logo{
+            width: unset !important;
+            .logo{
+                img{
+                    max-width: 20% !important;
+                    max-height: 20% !important;
+                }
+            }
+        }
+
+        .content-text{
+            width: unset !important;
+            margin-left: 0 !important;
+            .text{
+                font-size: 1.1rem !important;
+            }
+        }
+    }
+}

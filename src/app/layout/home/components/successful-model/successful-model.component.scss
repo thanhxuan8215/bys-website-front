@@ -1,0 +1,172 @@
+:host{
+    .contain{
+        background-image: url('/assets/images/background-successful-model.png');
+        background-size: cover;
+        .title{
+            font-size: 2.25rem;
+            color: rgb(25, 37, 75);
+            font-family: "Montserrat";
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 1.5rem;
+            padding-top: 4rem;
+        }
+        p.text-content{
+            width: 50%;
+            margin: auto;
+            font-size: 1rem;
+            color: #212f42;
+            font-family: "Roboto";
+            text-align: center;
+        }
+        .underline{
+            border: 1.5px solid #1d8588;
+            width: 5%;
+            margin: auto;
+        }
+        .list-box{
+            max-width: 80%;
+            margin: auto;
+            .content-item{
+                .image{
+                    overflow: hidden;
+                    &:hover{
+                        img{
+                            transform: scale(1.1);
+                        }
+                    } 
+                    position: relative;
+                    box-shadow: 0px 0px 12.35px 0.65px rgba(88, 88, 88, 0.21);
+                    margin: 0.7rem;
+                    img {
+                        max-width: 100%;
+                        max-height: 100%;
+                        transition: all 0.3s ease-in-out;
+                    }
+                    .content-text{
+                        position: absolute;
+                        bottom: -1px;
+                        background-color: white;
+                        height: 55%;
+                        clip-path: polygon(-1% 20%, 101% 0, 101% 100%, -1% 100%);
+                        &>.name{
+                            font-size: 1.4375rem;
+                            line-height: 1.875rem;
+                            color: rgb(25, 37, 75);
+                            font-family: "Montserrat";
+                            text-transform: uppercase;
+                            margin-top: 18%;
+                            margin-bottom: 0.6rem;
+                        }
+    
+                        &>p.text{
+                            font-size: 1rem;
+                            line-height: 1.875rem;
+                            color: rgb(33, 47, 66);;
+                            font-family: "Roboto";
+                        }
+                    }
+    
+                    .content-border{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 3.5rem;
+                        height: 3.5rem;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 39%;
+                        right: 5%;
+                        border-left: 4px solid rgba(255,255,255,0.3);
+                        border-top: 4px solid rgba(255,255,255,0.3);
+                        border-right: 4px solid white;
+                        border-bottom: 4px solid white;
+                        box-sizing: content-box;
+                        transform: rotate(38deg);
+                        .content-number{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-image: linear-gradient(to top, #31c1c9, #00a2c3, #0081b7, #0060a2, #323d83);
+                            width: 3.5rem;
+                            height: 3.5rem;
+                            border-radius: 50%;
+                            transform: rotate(-38deg);
+                            font-size: 2rem;
+                            line-height: 1.875rem;
+                            color: #ffffff;
+                            font-family: "Source Sans Pro";
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    
+}
+
+:host /deep/ {
+    .owl-theme .owl-dots .owl-dot span{
+        width: 15px;
+        height: 7px;
+        border-radius: 10px;
+        background: #8cc0c2;
+    }
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+        background: #1d8588
+    }
+
+    .owl-theme .owl-nav.disabled + .owl-dots{
+        margin-top: 2rem;
+    }
+
+    .owl-theme .owl-dots .owl-dot {
+        outline: none;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .contain{
+        .title{
+            font-size: 1.8rem !important;
+            padding: 1.5rem !important;
+        }
+        p.text-content{
+            width: 82% !important;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+    .list-box{
+        .content-item{
+            .image{
+                .content-text{
+                    &>.name{
+                        font-size: 1.3rem !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    :host /deep/ {
+        .owl-theme .owl-dots .owl-dot span{
+            width: 10px;
+            height: 10px;
+            border-radius: 2px;
+            background: #8cc0c2;
+        }
+        .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+            background: #1d8588
+        }
+    }
+    
+}

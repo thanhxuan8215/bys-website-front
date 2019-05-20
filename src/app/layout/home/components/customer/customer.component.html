@@ -1,0 +1,46 @@
+<div class="contain">
+  <div class="title p-4 pt-5">Khách hàng</div>
+  <div class="underline mb-4"></div>
+  <div class="content-center d-flex justify-content-between">
+    <div class="customer">
+      <div class="d-flex justify-content-start align-items-center">
+        <div>
+          <img src="assets/images/customer-satisfaction.svg" width="50">
+        </div>
+        <div class="number ml-4">100</div>
+      </div>
+      <div class="text">Khách hàng hài lòng</div>
+    </div>
+    <div class="star d-flex align-items-center justify-content-center">
+      <i class="fa fa-star m-1" aria-hidden="true"></i>
+      <i class="fa fa-star m-1" aria-hidden="true"></i>
+      <i class="fa fa-star m-1" aria-hidden="true"></i>
+    </div>
+    <div class="project d-flex justify-content-end">
+      <div class="d-inline">
+        <div class="d-flex justify-content-start align-items-center">
+          <div>
+            <img src="assets/images/file.svg" width="50">
+          </div>
+          <div class="number ml-4">100</div>
+        </div>
+        <div class="text">Dự án thành công</div>
+      </div>
+    </div>
+  </div>
+  <div class="list-box my-5">
+    <owl-carousel [options]="options" [items]="images"
+      [carouselClasses]="['owl-theme', 'sliding']">
+      <div class="item" *ngFor="let image of images;let i = index">
+        <div class="content-item">
+          <img class="p-3" src="http://bys.vn/portals/2007/vinmus_1.jpg">
+          <div class="content-text p-2">
+            <div class="name">CTY TNHH NỘI THẤT VINH MỸ</div>
+            <p class="text">4 Đường 13, P.Bình Hưng Hòa, Q.Bình Tân, TP.HCM</p>
+            <p class="text">Tư vấn, Thiết kế và Thi công Nội Thất</p>
+          </div>
+        </div>
+      </div>
+    </owl-carousel>
+  </div>
+</div>

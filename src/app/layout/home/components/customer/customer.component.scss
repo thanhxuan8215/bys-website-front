@@ -1,0 +1,208 @@
+:host{
+    .contain{
+        background-image: url('/assets/images/background-customer.png');
+        background-size: cover;
+        height: 100%;;
+        .title{
+            font-size: 2rem;
+            line-height: 1.875rem;
+            color:rgb(255, 255, 255);
+            font-family: "Montserrat";
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .underline{
+            border: 1.5px solid rgb(255, 255, 255);;
+            width: 5%;
+            margin: auto;
+        }
+        .content-center{
+            width: 54%;
+            margin: auto;
+            .customer{
+                width: calc(80% / 2);
+                .number{
+                    font-size: 5.75rem;
+                    line-height: 5rem;
+                    color: white;
+                    font-family: "Montserrat";
+                    font-weight: 400;
+                }
+                &>.text{
+                    font-size: 1.875rem;
+                    line-height: 1.875rem;
+                    color: white;
+                    font-family: "Roboto";
+                    text-transform: uppercase;
+                    padding-top: 1rem;
+                }
+            }
+    
+            .star{
+                width: 20%;
+                color: white;
+                i:nth-of-type(2){
+                    transform: scale(1.5);
+                }
+            }
+    
+            .project{
+                width: calc(80% / 2);
+                .number{
+                    font-size: 5.75rem;
+                    line-height: 5rem;
+                    color: white;
+                    font-family: "Montserrat";
+                    font-weight: 400;
+                }
+                .text{
+                    font-size: 1.875rem;
+                    line-height: 1.875rem;
+                    color: white;
+                    font-family: "Roboto";
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    padding-top: 1rem;
+                }
+            }
+        }
+        .list-box{
+            max-width: 80%;
+            margin: auto;
+            .content-item{
+                box-shadow: 0px 0px 12.35px 0.65px rgba(88, 88, 88, 0.21);
+                margin: 0.1rem;
+                background-color: #fff;
+                &:hover{
+                    img{
+                        transform: translateY(-5%);
+                    }
+                }
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                    transition: all 0.3s ease-in-out;
+                }
+                .content-text{
+                    background-color: #e5e5e5;
+                    &>.name{
+                        font-size: 0.9rem;
+                        color: #19254b;
+                        font-family: "Montserrat";
+                        font-weight: 600;
+                        padding: 0.4rem;;
+                    }
+
+                    &>p.text{
+                        padding-left: 0.4rem;
+                        font-size: 0.7rem;
+                        line-height: 1.5625rem;
+                        color: #19254b;
+                        font-family: "Roboto";
+                        font-weight: 400;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+:host /deep/ {
+    .owl-theme .owl-dots .owl-dot span{
+        width: 15px;
+        height: 7px;
+        border-radius: 2px;
+        background: #8cc0c2;
+    }
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+        background: #1d8588
+    }
+
+    .owl-theme .owl-nav.disabled + .owl-dots{
+        margin-top: 2rem;
+    }
+
+    .owl-theme .owl-dots .owl-dot {
+        outline: none;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+    .content-text{
+        background-color: #e5e5e5;
+        &>.name{
+            font-size: 0.8rem !important;
+        }
+
+        &>p.text{
+            font-size: 0.6rem !important;
+        }
+    }
+
+    .number{
+        font-size: 3rem !important;
+        line-height: 3rem !important;
+    }
+    .text{
+        font-size: 1rem !important;
+        line-height: 1rem !important;
+    }
+
+    .star{
+        font-size: 0.8rem !important;
+    }
+  }
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .title{
+        padding-top: 1.5rem !important;
+        font-size: 1.8rem !important;
+    }
+    p.text-content{
+        width: 82% !important;
+    }
+
+    .content-center{
+        display: flex;
+        flex-direction: column;
+        .customer{
+            width: 100% !important;
+            &>div{
+                justify-content: center !important;
+            }
+
+            margin-bottom: 2rem;
+            .text{
+                text-align: center;
+            }
+        }
+
+        .star{
+            display: none !important;
+        }
+
+        .project{
+            width: 100% !important;
+            justify-content: center !important;
+            .text{
+                text-align: center !important;
+            }
+        }
+    }
+
+    .list-box{
+        .content-item{
+            .content-text{
+                &>.name{
+                    font-size: 1.25rem !important;
+                }
+
+                &>p.text{
+                    font-size: 0.8rem !important;
+                }
+            }
+        }
+    }
+}

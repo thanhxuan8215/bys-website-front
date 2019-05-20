@@ -1,0 +1,105 @@
+<div class="header">
+  <div class="contain-logo">
+    <div class="logo d-flex align-items-center justify-content-center">
+      <a>
+        <img src="assets/images/logo.png" width="120" alt="">
+      </a>
+    </div>
+  </div>
+  <nav class="navbar top-navbar d-flex align-items-center">
+    <ul class="d-flex ul-left flex-wrap">
+      <li class="px-2">
+        <i class="fa fa-phone px-1" aria-hidden="true"></i>
+        <a href="tel:842862968537">(84 28) 6296 8537</a>
+      </li>
+      <li class="px-2">
+        <i class="fa fa-envelope-o px-1" aria-hidden="true"></i>
+        <a href="mailto: contact@bys.vn">contact@bys.vn</a>
+      </li>
+    </ul>
+    <ul class="d-flex ml-auto ul-right pl-2 flex-wrap ">
+      <li class="text-uppercase dropdown px-2 d-flex justify-content-center align-items-center" ngbDropdown>
+        <a href="javascript:void(0)" class="py-0" ngbDropdownToggle>
+          <img [src]="language == 'vn' ? 'assets/images/vi-VN.gif' : 'assets/images/en-US.gif'" class="pr-2"
+            alt="vi-VN"><span class="pr-1">{{language == 'vn' ? 'Tiếng Việt' : 'Tiếng Anh  '}}</span>
+        </a>
+        <div class="dropdown-menu-right" ngbDropdownMenu>
+          <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('vn')">
+            <img src="assets/images/vi-VN.gif" class="pr-2" alt="vi-VN"><span>Tiếng Việt</span>
+          </a>
+          <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('en')">
+            <img src="assets/images/en-US.gif" class="pr-2" alt="en-US"><span>Tiếng Anh</span>
+          </a>
+        </div>
+      </li>
+      <li class="text-uppercase px-2 d-flex justify-content-center align-items-center"> <a href="">Đăng nhập</a></li>
+      <li class="text-uppercase px-2 d-flex justify-content-center align-items-center"><a href="">Đăng ký</a></li>
+      <li class="google-plus d-flex justify-content-center align-items-center">
+        <a href="https://plus.google.com" class="social">
+          <i class="fa fa-google-plus" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="facebook d-flex justify-content-center align-items-center">
+        <a href="https://www.facebook.com" class="social">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="twitter d-flex justify-content-center align-items-center">
+        <a href="https://twitter.com/" class="social">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="vimeo d-flex justify-content-center align-items-center">
+        <a href="https://vimeo.com" class="social">
+          <i class="fa fa-vimeo" aria-hidden="true"></i>
+        </a>
+      </li>
+
+    </ul>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg bot-navbar d-flex py-4">
+    <button class="navbar-toggler" type="button" (click)="toggleSidebar()">
+      <i class="fa fa-bars text-muted" aria-hidden="true"></i>
+    </button>
+    <div class="d-none logo-mobi">
+      <a class="">
+        <img src="assets/images/logo.png" width="120" alt="">
+      </a>
+    </div>
+
+    <div class="d-none lang-mobi">
+      <a class="" href="javascript:void(0)" (click)="changeLang('vn')">
+        <img src="assets/images/vi-VN.gif" class="pr-2" alt="vi-VN">
+      </a>
+      <a class="" href="javascript:void(0)" (click)="changeLang('en')">
+        <img src="assets/images/en-US.gif" class="pr-2" alt="en-US">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse " id="navbarNavDropdown">
+      <ul class="navbar-nav text-uppercase d-flex flex-wrap">
+        <li class="nav-item ">
+          <a class="mx-3 py-2" routerLink="/home" routerLinkActive="active">Trang chủ</a>
+        </li>
+        <li class="nav-item ">
+          <a class="mx-3 py-2" routerLinkActive="active">Giới thiệu</a>
+        </li>
+        <li class="nav-item ">
+          <a class="mx-3 py-2" routerLinkActive="active">Mô hình thành công</a>
+        </li>
+        <li class="nav-item ">
+          <a class="mx-3 py-2">Giải pháp quản lý BYS ERP</a>
+        </li>
+        <li class="nav-item ">
+          <a class="mx-3 py-2">Tin tức</a>
+        </li>
+        <li class="nav-item ">
+          <a class="mx-3 py-2">Nghề nghiệp</a>
+        </li>
+        <li class="nav-item ">
+          <a class="mx-3 py-2" routerLink="/contact" routerLinkActive="active">Liên hệ</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
