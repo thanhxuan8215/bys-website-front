@@ -29,16 +29,17 @@
     </div>
   </div>
   <div class="list-box my-5">
-    <owl-carousel [options]="options" [items]="images"
-      [carouselClasses]="['owl-theme', 'sliding']">
+    <owl-carousel [options]="options" [items]="images" [carouselClasses]="['owl-theme', 'sliding']">
       <div class="item" *ngFor="let image of images;let i = index">
         <div class="content-item">
-          <img class="p-3" src="http://bys.vn/portals/2007/vinmus_1.jpg">
-          <div class="content-text p-2">
-            <div class="name">CTY TNHH NỘI THẤT VINH MỸ</div>
-            <p class="text">4 Đường 13, P.Bình Hưng Hòa, Q.Bình Tân, TP.HCM</p>
-            <p class="text">Tư vấn, Thiết kế và Thi công Nội Thất</p>
-          </div>
+          <a href="">
+            <img class="p-3" src="http://bys.vn/portals/2007/vinmus_1.jpg">
+            <div class="content-text p-2">
+              <div class="name">CTY TNHH NỘI THẤT VINH MỸ</div>
+              <p class="text">4 Đường 13, P.Bình Hưng Hòa, Q.Bình Tân, TP.HCM</p>
+              <p class="text">Tư vấn, Thiết kế và Thi công Nội Thất</p>
+            </div>
+          </a>
         </div>
       </div>
     </owl-carousel>

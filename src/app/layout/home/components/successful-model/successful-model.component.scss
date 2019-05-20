@@ -29,6 +29,12 @@
             max-width: 80%;
             margin: auto;
             .content-item{
+                a{
+                    text-decoration: none;
+                    &:hover .content-text .name{
+                        color: #1d8588;
+                    }
+                }
                 .image{
                     overflow: hidden;
                     &:hover{

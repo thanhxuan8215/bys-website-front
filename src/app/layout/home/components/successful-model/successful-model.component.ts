@@ -13,7 +13,6 @@ export class SuccessfulModelComponent implements OnInit {
     dots: true,
     navigation: false,
     autoplay: true,
-    loop: true,
     responsive: {
       481: {
         items: 1
