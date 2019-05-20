@@ -18,7 +18,7 @@ export class ExpertComponent implements OnInit {
       avatarUrl: 'assets/images/anhAn.png',
       position: 'Ban lãnh đạo',
       identify: 'Giám đốc điều hành',
-      description: '',
+      description: 'Tốt nghiệp chuyên ngành Phân tích kinh doanh; Phân tích & thiết kế hệ thống - Khoa công nghệ thông tin - Đại học Western Sydney, Úc vào năm 2005 Ông Vũ Khắc An đã có hơn 12 năm kinh nghiệm trong việc Phân tích thiết kế hệ thống; Tư vấn quản lý, quy trình & tái cấu trúc doanh nghiệp. Đặc biệt ông là Trưởng dự án tư vấn giải pháp & tư vấn triển khai hệ thống ERP cho nhiều khách hàng tại Việt Nam như: Công ty CP Lâm Việt; Nội thất Phố Xinh; Chi Lai; Nixxin; Đông Hưng; Green Home; Gavi; Tín Thương …',
       facebookLink: '',
       instagramLink: '',
       googlePlusLink: '',
