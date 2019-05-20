@@ -71,6 +71,16 @@
                                 color: #0f91a0;
                                 font-size: 0.8125rem;
                             }
+                            .location{
+                                margin-right: 1rem;
+                            }
+                            .phone{
+                                margin-right: calc(1rem - 2px);
+                            }
+                            .mail{
+                                margin-right: calc(1rem - 4px);
+                                transform: translateY(-1px);
+                            }
                             
                             &>div{
                                 display: grid;
