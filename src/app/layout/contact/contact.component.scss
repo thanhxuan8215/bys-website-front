@@ -110,6 +110,8 @@
                     outline: none;
                     font-family: "Montserrat";
                     background-color: #f8f8f8;
+                    font-size: 0.8rem;
+                    padding: .75rem;
                 }
 
                 button{
@@ -217,4 +219,16 @@
     agm-map {
         height: 500px !important;
       }
+}
+
+@media (width: 1920px){
+    .contain{
+        .content{
+            .box{
+                img{
+                    max-height: 191px;
+                }
+            }
+        }
+    }
 }

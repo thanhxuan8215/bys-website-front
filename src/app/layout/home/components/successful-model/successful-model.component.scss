@@ -144,6 +144,34 @@
             width: 82% !important;
         }
     }
+
+    :host /deep/ {
+        .owl-theme .owl-dots .owl-dot span{
+            width: 10px;
+            height: 10px;
+            border-radius: 2px;
+            background: #8cc0c2;
+        }
+        .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+            background: #1d8588
+        }
+    }
+}
+@media (width: 768px){
+    .content-border{
+        top: 39% !important;
+    }
+}
+@media (width: 1024px){
+    .content-border{
+        top: 38% !important;
+    }
+}
+
+@media (width: 1920) {
+    .content-border{
+        top: 40% !important;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
@@ -159,20 +187,4 @@
             }
         }
     }
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-
-    :host /deep/ {
-        .owl-theme .owl-dots .owl-dot span{
-            width: 10px;
-            height: 10px;
-            border-radius: 2px;
-            background: #8cc0c2;
-        }
-        .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
-            background: #1d8588
-        }
-    }
-    
 }

@@ -53,23 +53,23 @@
           <form [formGroup]="contactForm">
             <div class="d-flex my-4">
               <div class="w-50 mr-2">
-                <input type="text" class="w-100 p-2" placeholder="NAME:" formControlName="name" tabindex="1">
+                <input type="text" class="w-100" placeholder="NAME:" formControlName="name" tabindex="1">
                 <div class="d-flex" *ngIf="formErrors.name">
                     <span class="error">{{formErrors.name}}</span>
                   </div>
               </div>
               <div class="w-50 ml-2">
-                <input type="text" class="w-100 p-2" placeholder="E-MAIL:" formControlName="email" tabindex="2">
+                <input type="text" class="w-100" placeholder="E-MAIL:" formControlName="email" tabindex="2">
                 <div class="d-flex" *ngIf="formErrors.email">
                     <span class="error">{{formErrors.email}}</span>
                   </div>
               </div>
             </div>
             <div class="my-4">
-              <input type="text" class="w-100 p-2" placeholder="SUBJECT:" formControlName="subject" tabindex="3">
+              <input type="text" class="w-100" placeholder="SUBJECT:" formControlName="subject" tabindex="3">
             </div>
             <div class="my-4">
-              <textarea class="w-100 p-2" name="" id="" cols="30" rows="3" placeholder="MESSAGE:" formControlName="message" tabindex="4"></textarea>
+              <textarea class="w-100" name="" id="" cols="30" rows="3" placeholder="MESSAGE:" formControlName="message" tabindex="4"></textarea>
               <div class="d-flex" *ngIf="formErrors.message">
                   <span class="error">{{formErrors.message}}</span>
                 </div>
